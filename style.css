@@ -1,0 +1,248 @@
+*, h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, a{
+    padding-inline-start: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.pinkText{
+    color: #ff3998;
+}
+
+.silverText{
+    color: #555555;
+}
+
+.goldText{
+    color: #ff8139;
+}
+
+header, nav, .navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+    align-items: center;
+    margin:70px 80px 0 80px;
+}
+
+.ntfLogo img{
+    width: 198px;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+.navbar li{
+    font-size: 20px; 
+    font-weight: 10; 
+    flex-direction: row;
+    padding-left: 28px;
+}
+
+main{
+    padding:0 80px;
+}
+
+.luanchingSoon{
+    display: flex;
+    margin-top: 200px;
+}
+
+.nftLike{
+    width: 620px;
+    height: 519px;
+    box-sizing: border-box;
+}
+
+.nftLike h1{
+    font-size: 6rem;
+    padding-top:27px ;
+    line-height: 116px;
+}
+
+.nftLike p{
+    padding: 32px 140px 0 0;
+    font-size: 20px;
+    line-height: 30px;
+    width: 480px;
+}
+
+.signupButton{
+    grid-column: 2;
+    margin-top:68px;
+}
+
+.signupButton a{
+    color: black;
+    padding:27px 65.5px ;
+    border:solid 4px #ff8039 ;
+    border-radius: 35px;
+    margin-bottom: 18px;
+    
+}
+
+.pinkShape{
+    display: flex;
+    height: 519px;
+    align-items: center;
+}
+
+.pinkBackground{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: flex-start;
+    background-image: url(assets/assets/background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 320px;
+    margin-top:182px;
+}
+
+.pinkBackground h1{
+    font-size: 40px;
+    line-height: 48px;
+    padding: 0 0 0 64px;
+}
+
+.pinkBackground p{
+    font-size: 20px;
+    line-height: 30px;
+    padding:24px 0 64px 64px ;
+}
+
+.companyNamesGrey{
+    display: flex;
+    justify-content: space-between;
+    margin:126px 0 120px 0;
+}
+
+.auctionText, .cardsLine{
+    display: flex;
+}
+
+.auctionText{
+    flex-direction: column;
+}
+
+.auctionText h1{
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.auctionText p{
+    font-size: 20px;
+    line-height: 30px;
+    padding:24px 0 56px 0;
+}
+
+.auctionText a{
+    text-decoration: underline;
+}
+
+.cardsLine{
+    justify-content: space-between;
+    padding-bottom: 120px;
+    border-bottom:solid 2px #eeeeee;
+}
+
+.cardFrame{
+    display: flex;
+    flex-direction: column;
+}
+
+.cardText{
+    display: flex;
+    background-color: #eeeeee;
+    flex-direction: column;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius: 15px;
+}
+
+.cardTopText, .cardMidleText, .cardBottomText, .ethLogo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardText{
+    padding:24px;
+}
+
+.ethLogo img{
+    padding-right: 8px;
+}
+
+.cardTopText h3{
+    font-size: 12px;
+    line-height: 12px;
+    padding-bottom: 12px;
+}
+
+.cardMidleText h2{
+    font-size: 20px;
+    line-height:20px;
+    padding-bottom: 12px;
+}
+
+.cardBottomText h3{
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.greenLady{
+    display: flex;
+    border-bottom:solid 2px #eeeeee;
+}
+
+.greenLady h1{
+    font-size: 56px;
+    line-height: 68px;
+    width: 620px;
+}
+
+.greenLady h4{
+    margin-top: 120px;
+}
+
+.lady{
+    display: flex;
+    height: 467px;
+    margin-top:85px;
+    width: 50vw;
+    justify-content: space-around;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding:122px 80px 70px 80px;
+}
+
+.footerTopLine{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nftlandingZone{}
+
+.iconsGrey{
+    color: #555555;
+}
+
+.footerNavbar{
+    display: flex;
+}
+
+.footerBottomLine{
+    display: flex;
+    justify-content: space-between;
+}

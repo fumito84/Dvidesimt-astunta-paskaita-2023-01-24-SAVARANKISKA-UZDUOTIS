@@ -23,9 +23,16 @@ ul, li, a{
     color: #ff8139;
 }
 
-header, nav, .navbar, .burger{
+header, nav, .navbar, .burger, .navbar ul, .luanchingSoon, .pinkBackground, .pinkShape, .companyNamesGrey, .auctionText, .cardsLine, .cardText, .cardFrame, .cardTopText, .cardMidleText, .cardBottomText, .ethLogo, .greenLady, .lady, footer, .footerTopLine, .footerNavbar, .footerBottomLine{
     display: flex;
+}
+
+header, nav, .navbar, .burger, .companyNamesGrey, .cardsLine, .cardTopText, .cardMidleText, .cardBottomText, .ethLogo, .footerTopLine, .footerNavbar, .footerBottomLine{
     justify-content: space-between;
+}
+
+footer, .cardText, .cardFrame, .auctionText, .pinkBackground{
+    flex-direction: column;
 }
 
 header{
@@ -42,7 +49,7 @@ header{
     display: block;
     width: 25px;
     height: 3px;
-    margin: 5px 15px 5px 5px;
+    margin: 5px 5px 5px 5px;
     transition: all 0.3s ease;
     background-color: #555555;
 }
@@ -52,8 +59,7 @@ header{
 }
 
 .navbar ul{
-    display: flex;
-    align-items: center;
+   align-items: center;
 }
 
 .navbar li{
@@ -65,11 +71,10 @@ header{
 }
 
 main{
-     margin:0 80px;
+    margin:0 80px;
 }
 
 .luanchingSoon{
-    display: flex;
     margin-top: 200px;
 }
 
@@ -115,22 +120,26 @@ main{
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
-    
 }
 
 .pinkShape{
-    display: flex;
-    height: 519px;
+    width: 354px;
     align-items: center;
+    position: absolute;
+    right:350px;
+    top:220px;
+}
+
+.pinkShape img{
+    object-fit: cover;
 }
 
 .pinkBackground{
-    display: flex;
-    flex-direction: column;
     justify-content:flex-end;
     align-items: flex-start;
     background-image: url(assets/assets/background.svg);
     background-size: cover;
+    max-width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     height: 320px;
@@ -150,17 +159,7 @@ main{
 }
 
 .companyNamesGrey{
-    display: flex;
-    justify-content: space-between;
     margin:126px 0 120px 0;
-}
-
-.auctionText, .cardsLine{
-    display: flex;
-}
-
-.auctionText{
-    flex-direction: column;
 }
 
 .auctionText h1{
@@ -181,31 +180,15 @@ main{
 }
 
 .cardsLine{
-    justify-content: space-between;
     padding-bottom: 120px;
     border-bottom:solid 2px #eeeeee;
 }
 
-.cardFrame{
-    display: flex;
-    flex-direction: column;
-}
-
 .cardText{
-    display: flex;
     background-color: #eeeeee;
-    flex-direction: column;
     border-bottom-left-radius:15px ;
     border-bottom-right-radius: 15px;
-}
-
-.cardTopText, .cardMidleText, .cardBottomText, .ethLogo{
-    display: flex;
-    justify-content: space-between;
-}
-
-.cardText{
-    padding:24px;
+    padding: 24px;
 }
 
 .ethLogo img{
@@ -230,7 +213,6 @@ main{
 }
 
 .greenLady{
-    display: flex;
     border-bottom:solid 2px #eeeeee;
 }
 
@@ -246,23 +228,14 @@ main{
 }
 
 .lady{
-    display: flex;
     height: 467px;
-    margin-top:85px;
-    width: 50vw;
     justify-content: space-around;
+    margin-top:85px;
 }
 
 footer{
-    display: flex;
-    flex-direction: column;
     padding-top:122px;
     margin:0 80px 70px 80px;
-}
-
-.footerTopLine{
-    display: flex;
-    justify-content: space-between;
 }
 
 .nftlandingZone p{
@@ -274,8 +247,8 @@ footer{
 
 .iconsGrey a{
     color: #999999;
-    
 }
+
 .iconsGrey svg{
     padding-right: 16px;
     padding-top: 32px;
@@ -283,8 +256,6 @@ footer{
 }
 
 .footerNavbar{
-    display: flex;
-    justify-content: space-between;
     width: 590px;
     padding-right: 30px;
 }
@@ -308,20 +279,13 @@ footer{
     padding-bottom: 17px;
 }
 
-.footerBottomLine{
-    display: flex;
-    justify-content: space-between;
-}
-
 .footerBottomLine h3{
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
 }
 
-
 @media screen and (max-width:428px) {
-    
     header{
         margin:32px 32px 0 32px;
         padding-bottom: 80px;
@@ -330,17 +294,31 @@ footer{
     .navbar{
         display: none;
     }
+
     .burger{
         display: block;
     }
 
-    main{
+    .navbar .dropdown{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar .dropdown li{
+        padding-bottom: 8px;
+    }
+
+    div.burger:hover{
+        border: solid black 2px;
+    }
+
+    main, .pinkBackground{
         padding:0;
         margin:0;
     }
 
-    .luanchingSoon{
-       margin: 0 32px 0 32px;
+    .luanchingSoon, .greenLady{
+       margin: 0 32px 
     }
 
     .nftLike p, .nftLike{
@@ -356,7 +334,7 @@ footer{
         position: absolute;
         width: 190px;
         height: 278px;
-        top:110px;
+        top:200px;
         left:205px;
     }
 
@@ -366,20 +344,19 @@ footer{
 
     .pinkBackground{
         height: 326px;
-        margin: 0;
-        padding: 0;
     }
 
     .pinkBackground h1{
         padding: 0 0 0 32px;
+        width: 364px;
     }
 
     .pinkBackground p{
         padding: 24px 64px 32px 32px;
+        width: 364px;
     }
 
     .companyNamesGrey{
-        flex-wrap: wrap;
         margin: 67px 32px 56px 32px;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -387,14 +364,8 @@ footer{
         gap: 27px 35px;
     }
 
-    .companyNamesGrey div:nth-child(4){
-        display: none;
-    }
-
     .companyNamesGrey div:nth-child(1){
-        width: 164px;
-        height: 51px;
-        object-fit: cover;
+        display: none;
     }
 
     .cards{
@@ -414,12 +385,7 @@ footer{
         margin-right: 40px;
     }
 
-    .greenLady{
-        margin: 0 32px 0 32px;
-    }
-
     .greenLady h4{
-        
         margin-top:64px ;
     }
 
@@ -437,7 +403,30 @@ footer{
         right:60px;
     }
     footer{
+        padding: 0;
         margin:65px 32px 105px 32px;
     }
+
+    .footerTopLine{
+        flex-direction: column;
+    }
+
+    .footerNavbar{
+        display: grid;
+        width: 260px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .footerBottomLine div:last-child{
+        display: none;
+    }
+
+    .iconsGrey svg{
+       padding-bottom: 64px;
+    }
+
+
    
 }

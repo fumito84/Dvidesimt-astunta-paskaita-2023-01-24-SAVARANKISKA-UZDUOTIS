@@ -1,6 +1,8 @@
 *, h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style:normal;
 }
 
 ul, li, a{
@@ -42,7 +44,8 @@ header{
 
 .navbar li{
     font-size: 20px; 
-    font-weight: 10; 
+    font-weight: 400; 
+    line-height: 100%;
     flex-direction: row;
     padding-left: 28px;
 }
@@ -57,21 +60,29 @@ main{
 }
 
 .nftLike{
-    width: 620px;
+    width: 610px;
     height: 519px;
     box-sizing: border-box;
 }
 
 .nftLike h1{
-    font-size: 6rem;
-    padding-top:27px ;
+    font-size: 96px;
+    padding-top:24px ;
     line-height: 116px;
+    font-weight: 900;
+}
+
+.nftLike h4{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
 }
 
 .nftLike p{
     padding: 32px 140px 0 0;
     font-size: 20px;
-    line-height: 30px;
+    font-weight: 400;
+    line-height: 150%;
     width: 480px;
 }
 
@@ -86,6 +97,9 @@ main{
     border:solid 4px #ff8039 ;
     border-radius: 35px;
     margin-bottom: 18px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
     
 }
 
@@ -142,11 +156,13 @@ main{
 .auctionText p{
     font-size: 20px;
     line-height: 30px;
+    font-weight: 400;
     padding:24px 0 56px 0;
 }
 
 .auctionText a{
     text-decoration: underline;
+    font-weight: 600;
 }
 
 .cardsLine{
@@ -203,9 +219,10 @@ main{
     border-bottom:solid 2px #eeeeee;
 }
 
-.greenLady h1{
+.greenLadyText h1{
     font-size: 56px;
     line-height: 68px;
+    font-weight: bold;
     width: 620px;
 }
 
@@ -232,17 +249,63 @@ footer{
     justify-content: space-between;
 }
 
-.nftlandingZone{}
+.nftlandingZone p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-top: 30px;
+}
 
-.iconsGrey{
-    color: #555555;
+.iconsGrey a{
+    color: #999999;
+    
+}
+.iconsGrey svg{
+    padding-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 120px;
 }
 
 .footerNavbar{
     display: flex;
+    justify-content: space-between;
+    width: 590px;
+    padding-right: 30px;
+}
+
+.fontBold{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    letter-spacing: 0.1rem;
+}
+
+.footerNavbarLiText a{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    
+}
+
+.footerNavbarLiText li{
+    padding-bottom: 17px;
 }
 
 .footerBottomLine{
     display: flex;
     justify-content: space-between;
+}
+
+.footerBottomLine h3{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+@media screen and (min-width:428px) {
+    header{
+        
+    }
 }
